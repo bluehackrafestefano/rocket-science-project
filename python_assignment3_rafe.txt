@@ -1,0 +1,23 @@
+num = input("Please enter a positive integer number: ")
+
+while not num.isdigit():
+  print ("Do not use any entries other than numeric values")
+  num = input ("Please enter a positive integer number: ")
+
+while int(num) < 1:
+  print ("Not a positive number")
+  num = input ("Please enter a positive integer number: ")
+
+list_num = list(num)
+
+a = 0
+armstrong = 0
+while a < len(list_num):
+  itern = int(list_num[a])**len(list_num)
+  a += 1
+  armstrong = itern + armstrong
+
+if armstrong == int(num):
+  print(f"{num} is an Armstrong Number")
+else:
+  print(f"{num} is not an Armstrong Number")
