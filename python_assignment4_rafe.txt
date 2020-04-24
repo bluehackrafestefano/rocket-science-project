@@ -1,0 +1,24 @@
+num = input("Please enter a positive integer number: ")
+
+while not num.isdigit():
+  print ("Do not use any entries other than numeric values")
+  num = input ("Please enter a positive integer number: ")
+
+while int(num) < 1:
+  print ("Not a positive number")
+  num = input ("Please enter a positive integer number: ")
+
+a = int(num)
+
+if a == 2:
+  print(f"{num} is a Prime Number")
+elif a == 3:
+  print(f"{num} is a Prime Number")
+elif a == 5:
+  print(f"{num} is a Prime Number")
+elif a == 7:
+  print(f"{num} is a Prime Number")
+elif ((a % 2 == 0) or (a % 3 == 0) or (a % 5 == 0) or (a % 7 == 0)):
+  print(f"{num} is not a Prime Number")
+else:
+  print(f"{num} is a Prime Number")
