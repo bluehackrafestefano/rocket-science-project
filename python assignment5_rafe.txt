@@ -1,0 +1,9 @@
+fib_num = [1, 1]  # We know the first two fibonacci numbers are 1 and 1. So, to make an iteration we need at least two fibonacci numbers. I added them by default.
+
+new_fib = 0
+
+for i in range(1, 9):
+    new_fib = fib_num[i] + fib_num[i-1]
+    fib_num.append (new_fib)
+
+print(fib_num)
