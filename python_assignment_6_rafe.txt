@@ -30,8 +30,3 @@ else:
             prime.append(i)
 
 print(f"Prime numbers between 1 and {a} are:\n{prime}")
-
-
-# %%
-
-
